@@ -1,0 +1,58 @@
+#reporte {
+    * {
+        color: #494f66;
+    }
+    .row {
+        margin: 0 col(3,37);
+    }
+    .documents {
+        margin-left: 0;
+        margin-top: 32px;
+        ul .right-item {
+            margin-left: 0;
+        }
+        li {
+            width: 100%;
+            list-style: none;                
+            letter-spacing: -0.8px;
+            padding-bottom: 20px;
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            img {
+                width: 18px;
+                margin-left: 5px;
+                float: right;
+            }
+        }
+    }
+    @include desktop {
+        .row {
+            margin: 0 col(2,31);
+        }
+        .title {
+            margin: 0 col(5,27);
+        }
+        .documents {
+            margin-left: col(2,27);
+            margin-top: 56px;
+            ul .right-item {
+                margin-left: col(1,25);
+            }
+            li {
+                width: col(7,25);
+                padding-bottom: 20px;
+                a {
+                    font-size: 16px;
+                }
+                img {
+                    width: 18px;
+                    margin-left: 5px;
+                    float: inherit;
+                }
+            }
+        }
+    }
+}

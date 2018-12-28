@@ -1,0 +1,55 @@
+//Gothic Font
+$second-font: 'Gothic A1', sans-serif;
+// $second-font: 'Metrophobic', sans-serif;
+//Generic Colors
+$first-color:#13bfb1;
+$second-color:#FFB424;
+$third-color:#728EFF;
+$fourth-color:#22283D;
+
+//Grises
+$card-bgcolor:#F7F8FA;
+
+//Text Color
+$title-text-color:#494f66;
+$paragraph-text-color:#6e7799;
+$second-text-color:#ffffff;
+$third-text-color:#f0353b;
+
+//Icons
+$icon-color: #c1c6db;
+
+//Border radius
+$border-radius-first: 6px;
+$border-radius-second: 16px;
+//Buttons colors
+$btn-primary-color:#13bfb1;
+$btn-primary-hover:#2ceedec2;
+
+
+//Hover
+$color-Hover:#1dfce9;
+//Width column
+@function col($columns, $total) {
+  @return (100% / $total) * $columns;
+}
+
+//Show only mobile screens
+@mixin mobile{
+    @media only screen and (max-width: 425px) {
+      @content;
+    }
+}
+ 
+ ///Show on tablet screens
+ @mixin tablet {
+    @media only screen and (min-width: 426px) {
+      @content;
+    }
+ }
+ /// Show only on desktop screens
+ @mixin desktop {
+    @media only screen and (min-width: 1050px) {
+      @content;
+    }
+ }

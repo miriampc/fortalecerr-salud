@@ -1,0 +1,180 @@
+@import 'fonts';
+@import 'icons';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    outline: 0;
+}
+
+a{
+    cursor: pointer;
+}
+body {
+    margin: 0;
+}
+strong {
+    font-weight: 500;
+}
+section {
+    padding: 48px 0;
+    @include desktop {
+        padding: 75px 0;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.font-thin {
+    font-weight: 300;
+}
+
+.title {
+    &__section {
+        font-family: $second-font;
+        font-size: 10px;
+        font-weight: 600;
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.29;
+            letter-spacing: 1.4px;
+            font-weight: 300;
+        }
+    }
+    &__principal {
+        font-size: 24px;
+        font-weight: 300;
+        color: $first-color;
+        @include tablet {
+            font-size: 30px;
+        }
+        @include desktop {
+            font-size: 40px;
+            line-height: 1.3;
+            letter-spacing: -0.8px;
+        }
+    }
+    &__subtext {
+        font-weight: 300;
+        margin-top: 16px;
+        color: $paragraph-text-color;
+        @include desktop {
+            font-size: 18px;
+            margin-top: 16px;
+        }
+    }
+}
+
+//Butons style
+%btn-style {
+    display: block;
+    height: 52px;
+    line-height: 52px;    
+    border-radius: $border-radius-first;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: $second-font;
+    @include desktop {
+        font-size: 14px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+.cta {
+    
+    &__btn-primary {
+        @extend %btn-style;
+        background: $btn-primary-color;
+        color: #ffffff;
+        &:hover {
+            background: $btn-primary-hover;
+        }
+    }
+    &__btn-second {
+        @extend %btn-style;
+        background: $second-text-color;
+        color: $btn-primary-color;
+        &:hover {
+            //  background: $btn-primary-hover;
+        }
+    }
+    &__btn-second-border {
+        @extend %btn-style;
+        background: $first-color;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        &:hover {
+            background: #fff;
+            border: 1px solid $first-color;
+            color: $first-color;
+        }
+    }
+    &__btn-first-border {
+        @extend %btn-style;
+        height: 36px;
+        line-height: 36px;
+        border: 1px solid $first-color;
+        color: $first-color;
+        &:hover {
+            background: $first-color;
+            border: 1px solid $first-color;
+            color: #ffffff;
+        }        
+    }
+}
+
+.container {
+    width: 95%;
+    max-width: 296px;
+}
+
+@include mobile {
+    .hide-mobile {
+        display: none !important;
+    }
+    .hide-tablet-on-down {
+        display: none !important;
+    }
+}
+
+@include tablet {
+    .container {
+        max-width: 744px;
+    }
+    .hide-tablet-on-up {
+        display: none;
+    }
+    .hide-tablet-on-down {
+        display: none !important;
+    }
+    .hide-mobile {
+        display: block;
+    }
+}
+
+@include desktop {
+    .container {
+        width: 95%;
+        max-width: 1240px;
+    }
+    .hide-desktop {
+        display: none !important;
+    }
+    .hide-tablet-on-down {
+        display: block !important;
+    }
+}
+

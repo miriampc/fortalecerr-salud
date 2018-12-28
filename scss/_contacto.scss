@@ -1,0 +1,69 @@
+#contacto {
+    background: #ff5b61;
+    padding: 0;
+    * {color: #ffffff;}
+    .row {
+        margin: 0 col(3,37);
+    }
+    .title {
+        margin-top: 38px;
+        width: 100%;
+        text-align: center;
+        &__subtext {
+            strong {
+                font-size: 16px;
+            }
+        }
+    }
+    .personajes {
+        width: col(21,31);
+        margin: 35px 0 0 col(5,31);
+        img {
+            width: 100%;
+            margin-bottom: -2px;
+        }
+    }
+    @include tablet {
+        .row {
+            margin: 0 col(4,31);
+        }
+        .title {
+            &__subtext {
+                strong {
+                    font-size: 18px;
+                }
+            }
+        }
+        .personajes {
+            width: col(11,23);
+            margin: 35px 0 0 col(6,23);
+        }
+    }
+    @include desktop {
+        .row {
+            margin: 0 col(4,31);
+        }
+        .title {
+            margin-top: 68px;
+            width: col(12,23);
+            text-align: left;
+            &__subtext {
+                strong {
+                    font-size: 22px;
+                }
+            }
+        }
+        .personajes {
+            width: col(10,23);
+            margin-left: 0;
+            position: relative;
+            height: 351px;
+            img {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

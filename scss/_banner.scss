@@ -1,0 +1,64 @@
+#banner {
+    background: url('../images/fortalecer-m.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    *{color:#ffffff}
+    padding-top: 60px;    
+    .banner {
+        margin: 56px col(2,37) 80px;
+        text-align: center;
+        &__title {
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 1.41;
+            letter-spacing: -0.8px;
+            margin-bottom: 10px;
+        }
+        &__subtitle {
+            font-family: $second-font;
+            font-size: 13px;
+            line-height: 1.29;
+            letter-spacing: 0.2px;
+        }
+    }
+    @include tablet {
+        .banner {
+            margin: 74px col(5,31) 80px;
+            &__title {
+                font-size: 28px;
+                line-height: 1.1;
+                margin-bottom: 21px;
+            }
+            &__subtitle {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+        }
+
+    }
+    @include desktop {
+        padding-top: 80px;
+        background: url('../images/fortalecer-d.png') no-repeat;
+        height: 472px;
+        background-size: cover;
+        background-position: center;
+        .row {
+            margin: 0 col(1,31);
+        }
+        .banner {
+            margin: 67px 0 108px;
+            width: col(11,31);
+            text-align: left;            
+            &__title {
+                font-size: 40px;
+            }
+            &__subtitle {
+                font-size: 20px;
+            }
+            .cta {
+                width: col(7,11);
+            }
+        }
+    }
+  
+}

@@ -1,0 +1,312 @@
+@import "variables";
+
+#header {
+    width: 100%;
+    z-index: 4;
+    position: fixed;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    font-family: $second-font;
+    &.active{
+        z-index: 9;
+        @include tablet{
+            .header,.header__left--logo{
+                height: 70px;
+            }
+            .header__left, .header__right, .header__mobile--icon{
+                line-height: 70px;
+            }
+            .header__left--logo{
+                line-height: 60px;
+            }
+            .header__mobile--logo{
+                line-height: 80px;
+            }
+        }
+    }
+    @include mobile {
+        z-index: 2;
+        .container{
+            width: 100%;
+            max-width: 100%;
+            padding-right: 24px;
+            padding-left: 24px;
+
+        }
+    }
+    #menuClose, #menuOpen{
+        cursor: pointer;
+    }
+    .header {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        transition: all .2s ease-in-out;
+        &__left {
+            line-height: 80px;
+            width: 520px;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+            display: none;
+            transition: all .2s ease-in-out;
+       
+            &--logo {
+                width: 132px;
+                // height: 80px;
+                // line-height: 67px;
+                transition: all .2s ease-in-out;
+                img {
+                    height: 54px;
+                    vertical-align: middle;
+                }
+            }
+            @include desktop {
+                display: block;
+            }
+        }
+        &__right {
+            text-align: right;
+            line-height: 60px;
+            transition: all .2s ease-in-out;
+            @media screen and (max-width: 600px){
+                width: col(6,31);
+            }
+            @include tablet {
+                line-height: 80px;
+                width: col(19,29);
+            }
+            @include desktop {
+                text-align: right;
+                line-height: 80px;
+                width: calc(100% - 520px);
+            }
+            .header__link {
+                float: left;
+                width: col(3, 19);
+                margin-left: col(1, 19);
+                font-family: "Gothic A1",sans-serif;
+                letter-spacing: 0.4px;
+                font-weight: 100;
+                &:nth-child(2) {
+                    margin-left: 0;
+                }
+                &:nth-child(5) {
+                    font-weight: bold;
+                    i {
+                        margin-right: 5px;
+                        font-size: 18px;
+                    }
+                    @include tablet {
+                        margin-left: 0;
+                        width: col(12, 19);
+                        text-align: right;
+                    }
+                    @include desktop {
+                        width: col(7, 19);
+                    }
+                }
+
+            }
+            .cta {
+                width: 130px;
+                &__btn-second-border {
+                    height: 44px;
+                    letter-spacing: 1px;
+                    line-height: 44px;
+                    font-size: 12px;
+                    text-align: center;
+                }
+                a{
+
+                    i{
+                        padding-right: 5px;
+
+                    }
+                }
+            }
+        }
+        &__link {
+            display: inline-block;
+            letter-spacing: 0.6px;
+            font-family: $second-font;
+            text-decoration: none;
+            color: $title-text-color;
+            font-size: 16px;
+            font-family: "Gothic A1",sans-serif;
+            letter-spacing: 0.4px;
+            font-weight: 100;
+            i {
+                font-size: 6px;
+            }
+            &:hover{
+                color: #befaf5;
+            }
+        }
+        &__phone{
+            display: inline-block;
+            letter-spacing: 0.6px;
+            font-family: $second-font;
+            color: $second-text-color;
+            font-weight: bold;
+            font-size: 16px;
+            margin-right: 32px;
+            i {
+                font-size: 16px;
+            }
+        }
+        &__mobile {
+            width: col(37,37);
+            @include tablet {
+                width: col(10, 29);
+            }
+            @media screen and (max-width: 600px){
+                width: 100%;
+            }
+            &--icon {
+                transition: all .2s ease-in-out;
+                color: $second-text-color;
+                width: col(3, 37);
+                margin-right: col(1, 37);
+                line-height: 60px;
+                @include tablet {
+                    line-height: 80px;
+                    width: col(1, 10);
+                    margin-right: col(1, 10);
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 600px){
+                    width: col(2,31);
+                    margin-right: col(1, 31);
+                }
+                @include mobile{
+                    width: col(3, 37);
+                    margin-right: col(1, 37);
+                }
+            }
+            &--logo {
+                width: col(16, 37);
+                transition: all .2s ease-in-out;
+                line-height: 66px;
+                img {
+                    height: 18px;
+                    @include tablet {
+                        height: 24px;
+                    }
+                }
+                @include tablet {
+                    width: col(17, 31);
+                    line-height: 88px;
+                }
+            }
+            &--btn {
+                width: col(17, 37);
+                text-align: right;
+                display: none;
+                .cta {
+                    max-width: 230px;
+                    display: inline-block;
+                    &__btn-second-border {
+                        font-size: 12px;
+                        height: 36px;
+                        line-height: 36px;
+                        letter-spacing: 0.6px;
+                        padding: 0 12px;
+                        i{
+                            font-size: 12px;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+                @media screen and (max-width: 600px) {
+                    display: inline-block;
+                    width: col(11,31);
+                    line-height: 76px;
+                }
+                @include mobile{
+                    width: col(17, 37);
+                    line-height: 56px;
+                }
+            }
+            @include desktop {
+                display: none;
+            }
+        }
+        @include tablet {
+            width: col(29, 31);
+            margin-left: col(1, 31);
+            margin-right: col(1, 31);
+            height: 80px;
+        }
+    }
+    @include tablet {
+        .hide-mobile {
+            display: inline-block !important;
+        }
+    }
+    @include desktop {
+        margin-top: 0px;
+        z-index: 4;
+        .hide-tablet-on-down {
+            display: inline-block !important;
+            text-align: left;
+        }
+    }
+    .hide-link{
+        display: inline-block;
+    }
+    @media screen and (max-width: 600px){
+        .hide-link{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 1135px) {
+        .header__link {
+            display: none !important;
+        }
+    }
+}
+
+#nuestrosSeguros{
+    width: 380px;
+    position: fixed;
+    text-align: left;
+    z-index: 30;
+    height: 80px;
+    line-height: 80px;
+    transition: all .2s ease-in-out;
+    display: none;
+    left: 18%;
+
+    @include desktop{
+        display: block;
+    }
+    @media screen and (min-width: 1050px){
+        left: 19%;
+    }
+    &.active{
+        height: 70px;
+        line-height: 70px;
+    }
+    .header__link {
+        margin-left: col(5,29);
+        color: white;
+        font-family: "Gothic A1",sans-serif;
+        letter-spacing: 0.4px;
+        font-weight: 100;
+        i{
+            margin-left: 5px;
+            font-size: 6px;
+        }
+    }
+    #btnDescuentos2{
+        margin-left: 20px
+    }
+    &.toggle{
+        .header__link i{
+            transition: all .2s ease-in-out;
+            transform: rotate(-180deg);
+            :before{
+                transform: rotate(-180deg);
+            }
+        }
+    }
+ }
