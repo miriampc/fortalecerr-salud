@@ -1,25 +1,14 @@
 $(document).ready(function () {
+    //Animate
+    $('.header__link').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -70}, 800, 'linear');
+    });
     //Ejecuta funciones con data dinamica
-    MedioAmbiente();
-    CadenaValor();
-    Reconocimientos();
+    Servicios();
 
-    //match media for carousels    
-    if (window.matchMedia("(max-width: 1049px)").matches) {
-        addCarousel('voluntariado-carousel',1,2);
-        addCarousel('gestion-carousel',2,3);
-        addCarousel('educacion-carousel',1,2);
-        addCarousel('estrategias-carousel',1,2);
-        addCarousel('reconocimientos-carousel',1,2);
-        addCarousel('proveedores-carousel',1,2);
-    }else {
-        $('#voluntariado-carousel').removeClass('owl-carousel owl-theme');
-        $('#gestion-carousel').removeClass('owl-carousel owl-theme');
-        $('#educacion-carousel').removeClass('owl-carousel owl-theme');
-        $('#estrategias-carousel').removeClass('owl-carousel owl-theme');
-        $('#reconocimientos-carousel').removeClass('owl-carousel owl-theme');
-        $('#proveedores-carousel').removeClass('owl-carousel owl-theme');
-    }
+    //match media for carousels
+    addCarousel('servicios-carousel',1,2);
     function addCarousel(element, mobItems, tabletItems) {
         $("#"+element).owlCarousel({
             loop: true,
@@ -41,17 +30,7 @@ $(document).ready(function () {
             }
         });
     }
-    //Voluntariado Section
-    $('.voluntariado-d .right .item').click(function(e){
-        if (!$(this).hasClass("active")) {
-            $('.voluntariado-d .right .item').removeClass("active");
-            $(this).addClass("active");
-        }
-        else {
-            $(this).removeClass("active");
-        }
-    })
-    
+
     //Menu dropdown
     $(".menu__dropdown--item").click(function (e) {
         if (!$(this).hasClass("active")) {
@@ -64,13 +43,6 @@ $(document).ready(function () {
             $(this).find('.menu__dropdown--body').slideUp("slow");
             $(this).removeClass("active");
         }
-    })
-
-    //Menu desktop
-    $("#btnNuestrosSeguros").click(function () {
-        $("#menuDesktop").slideToggle("fast");
-        $(this).toggleClass("toggle");
-        $('#overlay').toggleClass("active");
     })
 
     //Menu fixed
@@ -101,34 +73,46 @@ $(document).ready(function () {
         lastScrollTop = currentScroll;
     });
 
-    $('#overlay').click(function () {
-        $(this).toggleClass("active");
-        $("#menuDesktop").slideToggle("fast");
-    })
-
     //Menu mobile
     $("#menuOpen, #menuClose").click(function () {
         $("#menuMobile, body").toggleClass("active");
     })
+    $(".menu__dropdown--header").click(function () {
+        $("#menuMobile, body").toggleClass("active");
+    })
 
-    //Education section
-    var cardH = $('.yomecuido__right').outerHeight();
-    $('.yomecuido__left img').css('height',cardH);
-
-    //Voluntariado section
-    var itemH = $('.voluntariado-d .left img').outerHeight();
-    $('.voluntariado-d .right').css('height',itemH);
-
-    $(window).resize(function () {
-        nuestrosSeguros();
-        var cardH = $('.yomecuido__right').outerHeight();
-        $('.yomecuido__left img').css('height',cardH);
+    //Elements
+    $("#fullName").on('focus',onFocus);
+    $("#email").on('focus',onFocus);
+    $("#message").on('focus',onFocus);
+    $("#fullName").on('blur',onBlur);
+    $("#email").on('blur',onBlur);
+    $("#message").on('blur',onBlur);
+    //Form Contact
+    $('#form-contact').on("submit", function(e) {
+        e.preventDefault();
+        const dataForm = {
+            fullName: $('#fullName').val(),
+            email: $('#email').val(),
+            message:$('#message').val()
+        }
+        // if (!validarInputs()) {
+        //     console.log('Falto validar los Input');
+        //     e.preventDefault();
+        //     return false;
+        // } else {
+            $.ajax({
+                method: "POST",
+                url: "https://formspree.io/infofortalecer@gmail.com",
+                data: $('#contact-form').serialize(),
+                data:dataForm,
+                dataType: "json"
+            });
+            alert("Su mensaje fue enviado satisfactoriamente\nGracias!");
+            console.log('Envia');
+            $('#form-contact')[0].reset();
+        // }
     });
-    nuestrosSeguros();
-    function nuestrosSeguros() {
-        var width = (window.innerWidth - 1240) / 2 + 200;
-        $("#nuestrosSeguros").css("left", width);
-    }
 
     // Modal Términos
     $('#tyc').click(function(){

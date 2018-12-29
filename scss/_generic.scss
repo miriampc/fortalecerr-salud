@@ -54,12 +54,13 @@ section {
         font-size: 24px;
         font-weight: 300;
         color: $first-color;
+        font-family: $third-font;
         @include tablet {
             font-size: 30px;
         }
         @include desktop {
             font-size: 40px;
-            line-height: 1.3;
+            line-height: 1.1;
             letter-spacing: -0.8px;
         }
     }
@@ -73,6 +74,60 @@ section {
         }
     }
 }
+//Input Style
+.input-field {
+    position: relative;
+    margin-top: 5px;
+    height: 70px;
+    input[type="text"], input[type="email"], input[type="number"], textarea {
+        color: #fff;
+        border: solid 1px #d4d5e8;
+        background: transparent;
+        width: 100%;
+        height: 52px;
+        padding-left: 10px;
+        padding-top: 7px;
+        border-radius: 4px;
+        outline: none;
+        font-size: 15px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
+        transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+        &::-ms-clear {
+            display: none;
+        }
+    }
+    input:disabled {
+        background-color: #fafafc;
+    }
+    textarea {
+        height: 140px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    label {
+        color: #c1c6db;
+        position: absolute;
+        bottom: 48%;
+        left: 10px;
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+        cursor: text;
+        -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+        transition: transform 0.2s ease-out, color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        text-align: initial;
+        &.active {
+            -webkit-transform: translateY(-15px) scale(0.8);
+            transform: translateY(-15px) scale(0.8);
+        }
+    }   
+}
 
 //Butons style
 %btn-style {
@@ -81,20 +136,21 @@ section {
     line-height: 52px;    
     border-radius: $border-radius-first;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 12px;
     letter-spacing: 1px;
     cursor: pointer;
     font-family: $second-font;
+    width: 100%;
+    -webkit-appearance: button-bevel;
     @include desktop {
         font-size: 14px;
-        height: 60px;
-        line-height: 60px;
+        height: 54px;
+        line-height: 54px;
     }
 }
 
-.cta {
-    
+.cta {    
     &__btn-primary {
         @extend %btn-style;
         background: $btn-primary-color;
@@ -102,26 +158,7 @@ section {
         &:hover {
             background: $btn-primary-hover;
         }
-    }
-    &__btn-second {
-        @extend %btn-style;
-        background: $second-text-color;
-        color: $btn-primary-color;
-        &:hover {
-            //  background: $btn-primary-hover;
-        }
-    }
-    &__btn-second-border {
-        @extend %btn-style;
-        background: $first-color;
-        border: 1px solid #ffffff;
-        color: #ffffff;
-        &:hover {
-            background: #fff;
-            border: 1px solid $first-color;
-            color: $first-color;
-        }
-    }
+    }    
     &__btn-first-border {
         @extend %btn-style;
         height: 36px;

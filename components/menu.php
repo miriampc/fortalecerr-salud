@@ -26,7 +26,6 @@
                         <a href="https://www.rimac.com.pe/personas-salud-rimac-eps">EPS</a>
                         <a href="https://www.rimac.com.pe/personas-salud-oncologico">Oncológico</a>
                         <a href="https://www.rimac.com.pe/personas-vida">Accidentes</a>
-
                     </div>
                 </div>
             </div>
@@ -104,10 +103,10 @@
                     </div>
                 </div>
                 <div class="col header__right">
-                    <a target="_blank" href="#banner" class="header__link hide-tablet-on-down">INICIO</a>
-                    <a target="_blank" href="#servicios" class="header__link hide-tablet-on-down">SERVICIOS</a>
-                    <a target="_blank" href="#cuidados" class="header__link hide-tablet-on-down">CUIDADOS</a>
-                    <a target="_blank" href="#contacto" class="header__link hide-tablet-on-down">CONTACTO</a>
+                    <a href="#banner" class="header__link hide-tablet-on-down">INICIO</a>
+                    <a href="#servicios" class="header__link hide-tablet-on-down">SERVICIOS</a>
+                    <a href="#cuidados" class="header__link hide-tablet-on-down">CUIDADOS</a>
+                    <a href="#contacto" class="header__link hide-tablet-on-down">CONTACTO</a>
                     <!-- <li class="header__phone hide-link">
                         <i class="icon-phone"></i> 01 411 - 1111
                     </li> -->

@@ -1,30 +1,33 @@
-#medioAmbiente {
-    * {color: #494f66;}
+#servicios {
+    background: #0eb6a8;
     .row {
         margin: 0 col(2,37);
     }
-    .owl-carousel .owl-stage-outer {
-        padding: 20px 20px 0 0;
+    .owl-carousel .owl-item img {
+        display: inline-block;
     }
-    .estrategias {
+    .owl-carousel .owl-stage-outer {
+        padding-top: 50px;
+    }
+    .title {
+        * {color: #ffffff;}
+    }
+    .servicios {
         margin-top: 32px;
-        .right-item {
-            margin-left: 0;
-        }
         .item {
             position: relative;
-            padding: 28px 24px;
-            width: col(31,33);
+            padding: 20px 14px;
+            width: 100%;
             border-radius: 12px;
             * {color: #494f66}
-            text-align: center;
             &__title {
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 500;
                 letter-spacing: -0.8px;
+                margin-top: 35px;
             }
             &__text {
-                margin-top: 10px;
+                margin-top: 18px;
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 1.41;
@@ -32,66 +35,58 @@
 
             &__img {
                 position: absolute;
-                right: -16px;
-                top: -16px;
-                width: 45px;
+                left: 32%;
+                top: -50px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: #68d0c8;
+                img{
+                    width: 50px;
+                    position: relative;
+                    top: 19%;
+                }
             }
-        }
-        #estrategias-carousel{
-            @include desktop{
-            display: flex;
-    align-items: center;
-    flex-flow: wrap;
-}
         }
     }
     @include tablet {
         .row {
             margin: 0 col(2,31);
         }
-        .estrategias {
+        .servicios {
             .item {
                 max-width: 320px;
             }
         }
-
     }
     @include desktop {
         .row {
-            margin: 0 col(2,31);
+            margin: 0 col(1,31);
         }
         .title {
             margin: 0 col(5,27);
         }
-        .estrategias {
+        .servicios {
             margin-top: 56px;
-            .right-item {
-                margin-left: col(1,27);
-            }
             .item {
-                position: relative;
-                padding: 40px;
-                width: col(13,27);
-                max-height: 288px;
-                margin-bottom: 35px;
-                text-align: left;
+                padding: 30px;
+                // width: col(9,29);
                 max-width: 100%;
                 &__title {
-                    font-size: 22px;
+                    font-size: 20px;
                 }
                 &__text {
-                    margin-top: 18px;
                     font-size: 16px;
                 }
                 &__img {
-                    width: 63px;
+                    left: 37%;
                 }
             }
         }
     }
     @media screen and (min-width:426px) and (max-width:589px) {
-        .estrategias {
-            margin: 12px col(4,25) 0; 
+        .servicios {
+            margin: 32px col(4,25) 0;
         }
     }
 }

@@ -93,52 +93,34 @@
                     border-top: 1px solid #F0F1F5;
                 }
                 a {
-                    font-family: $second-font;
+                    font-family: $first-font;
                     font-size: 12px;
                     letter-spacing: 1px;
                     color: $title-text-color;
+                    text-decoration: none;
                     &:hover {
                         color: $first-color;
                     }
                     i {
-                        transition: all .3s ease-in-out;
-                        transform: rotate(0deg);
-                        font-size: 6px;
+                        font-size: 18px;
                         line-height: 70px;
-                    }
-                }
-                &.active {
-                    background: #FAFAFC;
-                    .menu__dropdown--header {
-                        i:last-child {
-                            color: $first-color;
-                            transition: all .2s ease-in-out;
-                            transform: rotate(-180deg);
-                        }
-                    }
-                }
-                &:hover, &.active {
-                    .menu__dropdown--header {
-                        color: $first-color;
                     }
                 }
                 &-logo{
                     height: 60px;
                     line-height: 60px;
-                    .col{
-                        display: inline-block;
-                        line-height: 60px;
-                        img{
-                            height: 18px;
-                        }
+                    img{
+                        height: 32px;
+                        position: relative;
+                        top: 9px;
                     }
                     i{
                         display: inline-block;
-                        width: col(2,37);
-                        color:$icon-color;
+                        width: col(9,37);
+                        color:$title-text-color;
                         font-size: 18px;
+                        font-weight: 700;
                         margin:0;
-                        margin-right:col(2,37);
                         @include tablet{
                             width: col(1,31);
                             margin:0;
@@ -175,20 +157,12 @@
                 font-weight: bold;
                 &.salud{line-height: 76px}
                 i {
-                    &:first-child{
-                        color: $first-color;
-                        float: left;
-                        font-size: 18px;
+                    color: $first-color;
+                    float: left;
+                    width: col(2,27);
+                    @include mobile{
                         width: col(2,27);
-                        @include mobile{
-                            width: col(2,27);
-                            margin-right: 20px;
-                        }
-                    }
-                    &:last-child{
-                        color: $paragraph-text-color;
-                        float: right;
-                        transform: rotate(0deg);
+                        margin-right: 20px;
                     }
                 }
                 @include tablet {

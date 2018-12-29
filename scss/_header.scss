@@ -80,12 +80,8 @@
                 width: calc(100% - 520px);
             }
             .header__link {
-                float: left;
                 width: col(3, 19);
                 margin-left: col(1, 19);
-                font-family: "Gothic A1",sans-serif;
-                letter-spacing: 0.4px;
-                font-weight: 100;
                 &:nth-child(2) {
                     margin-left: 0;
                 }
@@ -127,32 +123,19 @@
         &__link {
             display: inline-block;
             letter-spacing: 0.6px;
-            font-family: $second-font;
+            font-family: $first-font;
             text-decoration: none;
             color: $title-text-color;
-            font-size: 16px;
-            font-family: "Gothic A1",sans-serif;
+            font-size: 15px;
             letter-spacing: 0.4px;
-            font-weight: 100;
+            font-weight: 400;
             i {
                 font-size: 6px;
             }
             &:hover{
-                color: #befaf5;
+                color: $first-color;
             }
-        }
-        &__phone{
-            display: inline-block;
-            letter-spacing: 0.6px;
-            font-family: $second-font;
-            color: $second-text-color;
-            font-weight: bold;
-            font-size: 16px;
-            margin-right: 32px;
-            i {
-                font-size: 16px;
-            }
-        }
+        }    
         &__mobile {
             width: col(37,37);
             @include tablet {
@@ -163,9 +146,8 @@
             }
             &--icon {
                 transition: all .2s ease-in-out;
-                color: $second-text-color;
-                width: col(3, 37);
-                margin-right: col(1, 37);
+                color: $title-text-color;
+                width: col(9, 37);
                 line-height: 60px;
                 @include tablet {
                     line-height: 80px;
@@ -178,18 +160,18 @@
                     margin-right: col(1, 31);
                 }
                 @include mobile{
-                    width: col(3, 37);
-                    margin-right: col(1, 37);
+                    width: col(9,37);
                 }
             }
             &--logo {
                 width: col(16, 37);
                 transition: all .2s ease-in-out;
-                line-height: 66px;
+                line-height: 61px;
                 img {
-                    height: 18px;
+                    height: 32px;
+                    margin-top: 14px;
                     @include tablet {
-                        height: 24px;
+                        height: 40px;
                     }
                 }
                 @include tablet {

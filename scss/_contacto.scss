@@ -1,69 +1,50 @@
 #contacto {
-    background: #ff5b61;
-    padding: 0;
-    * {color: #ffffff;}
+    background: #3c3f47;
     .row {
-        margin: 0 col(3,37);
+        margin: 0 col(2,37);
     }
-    .title {
-        margin-top: 38px;
-        width: 100%;
-        text-align: center;
-        &__subtext {
-            strong {
-                font-size: 16px;
-            }
-        }
-    }
-    .personajes {
-        width: col(21,31);
-        margin: 35px 0 0 col(5,31);
-        img {
-            width: 100%;
-            margin-bottom: -2px;
-        }
+    .right {
+        width: col(33,33);
+        margin-top: 32px;
+        .right-item {
+            margin-left: inherit;
+        }        
     }
     @include tablet {
         .row {
             margin: 0 col(4,31);
         }
-        .title {
-            &__subtext {
-                strong {
-                    font-size: 18px;
-                }
-            }
-        }
-        .personajes {
-            width: col(11,23);
-            margin: 35px 0 0 col(6,23);
-        }
     }
     @include desktop {
         .row {
-            margin: 0 col(4,31);
+            margin: 0 col(1,31);
         }
         .title {
-            margin-top: 68px;
-            width: col(12,23);
             text-align: left;
-            &__subtext {
-                strong {
-                    font-size: 22px;
+            margin-top:68px;
+        }
+        .left {
+            width: col(15,29);
+            .input-field {
+                width: col(6,15);
+                &:nth-child(1) {
+                    margin-right: col(.5,15);
                 }
             }
-        }
-        .personajes {
-            width: col(10,23);
-            margin-left: 0;
-            position: relative;
-            height: 351px;
-            img {
-                width: 100%;
-                position: absolute;
-                bottom: 0;
-                margin-bottom: 0;
+            .message {
+                width: col(12.5,15);
+                height: 160px;
+                label {
+                    bottom: 77%;
+                }
             }
+            .cta {
+                width: col(6,15);
+            }
+        }
+        .right {
+            margin-top: 0;
+            width: col(14,29);
         }
     }
 }
