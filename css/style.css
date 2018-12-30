@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900");
 .owl-theme .owl-nav {
   margin-top: 10px;
   position: relative;
@@ -9,10 +8,11 @@
 .owl-theme .owl-dots .owl-dot span {
   width: 8px;
   height: 8px;
+  background: #68d0c8;
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #f0353b;
+  background: #ffffff;
 }
 
 .container {
@@ -44,45 +44,12 @@
   font-weight: normal;
   font-style: normal;
 }
-/* gothic-a1-300 - latin */
 @font-face {
-  font-family: "Gothic A1";
+  font-family: "icomoon";
+  src: url("../fonts/more-fonts/icomoon.eot?8sz293");
+  src: url("../fonts/more-fonts/icomoon.eot?8sz293#iefix") format("embedded-opentype"), url("../fonts/more-fonts/icomoon.ttf?8sz293") format("truetype"), url("../fonts/more-fonts/icomoon.woff?8sz293") format("woff"), url("../fonts/more-fonts/icomoon.svg?8sz293#icomoon") format("svg");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/gothic-a1-v4-latin-300.eot");
-  /* IE9 Compat Modes */
-  src: local("Gothic A1 Light"), local("GothicA1-Light"), url("../fonts/gothic-a1-v4-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/gothic-a1-v4-latin-300.woff2") format("woff2"), url("../fonts/gothic-a1-v4-latin-300.woff") format("woff"), url("../fonts/gothic-a1-v4-latin-300.ttf") format("truetype"), url("../fonts/gothic-a1-v4-latin-300.svg#GothicA1") format("svg");
-  /* Legacy iOS */
-}
-/* gothic-a1-regular - latin */
-@font-face {
-  font-family: "Gothic A1";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/gothic-a1-v4-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local("Gothic A1 Regular"), local("GothicA1-Regular"), url("../fonts/gothic-a1-v4-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gothic-a1-v4-latin-regular.woff2") format("woff2"), url("../fonts/gothic-a1-v4-latin-regular.woff") format("woff"), url("../fonts/gothic-a1-v4-latin-regular.ttf") format("truetype"), url("../fonts/gothic-a1-v4-latin-regular.svg#GothicA1") format("svg");
-  /* Legacy iOS */
-}
-/* gothic-a1-600 - latin */
-@font-face {
-  font-family: "Gothic A1";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/gothic-a1-v4-latin-600.eot");
-  /* IE9 Compat Modes */
-  src: local("Gothic A1 SemiBold"), local("GothicA1-SemiBold"), url("../fonts/gothic-a1-v4-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/gothic-a1-v4-latin-600.woff2") format("woff2"), url("../fonts/gothic-a1-v4-latin-600.woff") format("woff"), url("../fonts/gothic-a1-v4-latin-600.ttf") format("truetype"), url("../fonts/gothic-a1-v4-latin-600.svg#GothicA1") format("svg");
-  /* Legacy iOS */
-}
-/* gothic-a1-800 - latin */
-@font-face {
-  font-family: "Gothic A1";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/gothic-a1-v4-latin-800.eot");
-  /* IE9 Compat Modes */
-  src: local("Gothic A1 ExtraBold"), local("GothicA1-ExtraBold"), url("../fonts/gothic-a1-v4-latin-800.eot?#iefix") format("embedded-opentype"), url("../fonts/gothic-a1-v4-latin-800.woff2") format("woff2"), url("../fonts/gothic-a1-v4-latin-800.woff") format("woff"), url("../fonts/gothic-a1-v4-latin-800.ttf") format("truetype"), url("../fonts/gothic-a1-v4-latin-800.svg#GothicA1") format("svg");
-  /* Legacy iOS */
 }
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -107,19 +74,7 @@
 }
 
 .icon-salud:before {
-  content: "";
-}
-
-.icon-vida:before {
-  content: "";
-}
-
-.icon-vehicular:before {
-  content: "";
-}
-
-.icon-viajes:before {
-  content: "";
+  content: "";
 }
 
 .icon-arrow-left:before {
@@ -174,6 +129,34 @@
   content: "";
 }
 
+.icon-home:before {
+  content: "";
+}
+
+.icon-location:before {
+  content: "";
+}
+
+.icon-medicine:before {
+  content: "";
+}
+
+.icon-person:before {
+  content: "";
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-mail:before {
+  content: "";
+}
+
+.icon-whatsapp:before {
+  content: "";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -199,7 +182,7 @@ section {
 }
 @media only screen and (min-width: 1050px) {
   section {
-    padding: 75px 0;
+    padding: 0;
   }
 }
 
@@ -250,6 +233,7 @@ section {
   font-weight: 300;
   margin-top: 16px;
   color: #6e7799;
+  text-align: justify;
 }
 @media only screen and (min-width: 1050px) {
   .title__subtext {
@@ -288,7 +272,7 @@ section {
   background-color: #fafafc;
 }
 .input-field textarea {
-  height: 140px;
+  height: 116px;
   width: 100%;
   padding-top: 20px;
 }
@@ -319,7 +303,7 @@ section {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 1px;
   cursor: pointer;
   font-family: "Metrophobic", sans-serif;
@@ -1238,25 +1222,16 @@ body.active {
   background-position: center;
   padding-top: 60px;
 }
-#banner * {
-  color: #ffffff;
-}
 #banner .banner {
-  margin: 56px 5.4054054054% 80px;
+  margin: 36px 5.4054054054% 221px;
   text-align: center;
 }
 #banner .banner__title {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 300;
-  line-height: 1.41;
-  letter-spacing: -0.8px;
-  margin-bottom: 10px;
-}
-#banner .banner__subtitle {
-  font-family: "Metrophobic", sans-serif;
-  font-size: 13px;
-  line-height: 1.29;
-  letter-spacing: 0.2px;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  color: #494f66;
 }
 @media only screen and (min-width: 426px) {
   #banner .banner {
@@ -1267,16 +1242,11 @@ body.active {
     line-height: 1.1;
     margin-bottom: 21px;
   }
-  #banner .banner__subtitle {
-    font-size: 16px;
-    line-height: 1.6;
-  }
 }
 @media only screen and (min-width: 1050px) {
   #banner {
     padding-top: 80px;
     background: url("../images/fortalecer-d.png") no-repeat;
-    height: 472px;
     background-size: cover;
     background-position: center;
   }
@@ -1284,15 +1254,12 @@ body.active {
     margin: 0 3.2258064516%;
   }
   #banner .banner {
-    margin: 67px 0 108px;
+    margin: 80px 0 120px;
     width: 35.4838709677%;
     text-align: left;
   }
   #banner .banner__title {
     font-size: 40px;
-  }
-  #banner .banner__subtitle {
-    font-size: 20px;
   }
   #banner .banner .cta {
     width: 63.6363636364%;
@@ -1319,7 +1286,7 @@ body.active {
     margin: 0 3.2258064516%;
   }
   #quienesSomos .left {
-    margin-top: 114px;
+    margin-top: 96px;
     width: 44.8275862069%;
   }
   #quienesSomos .left .title {
@@ -1332,6 +1299,7 @@ body.active {
   }
   #quienesSomos .right img {
     width: 100%;
+    margin-bottom: -4px;
   }
 }
 
@@ -1350,6 +1318,9 @@ body.active {
 #servicios .title * {
   color: #ffffff;
 }
+#servicios .title__subtext {
+  text-align: center;
+}
 #servicios .servicios {
   margin-top: 32px;
 }
@@ -1357,6 +1328,7 @@ body.active {
   position: relative;
   padding: 20px 14px;
   width: 100%;
+  min-height: 270px;
   border-radius: 12px;
 }
 #servicios .servicios .item * {
@@ -1397,6 +1369,9 @@ body.active {
   }
 }
 @media only screen and (min-width: 1050px) {
+  #servicios {
+    padding: 75px 0;
+  }
   #servicios .row {
     margin: 0 3.2258064516%;
   }
@@ -1426,12 +1401,25 @@ body.active {
   }
 }
 
+#cuidados {
+  padding-top: 0;
+}
 #cuidados .row {
   margin: 0 5.4054054054%;
 }
+#cuidados .img-cuidados {
+  margin: 0 -10.5%;
+}
+#cuidados img {
+  width: 100%;
+  height: 150px;
+}
+#cuidados .left .title {
+  margin: 40px 0 24px;
+}
 #cuidados .right {
   width: 100%;
-  margin-top: 32px;
+  margin-top: 8px;
 }
 #cuidados .right .right-item {
   margin-left: inherit;
@@ -1445,20 +1433,22 @@ body.active {
   #cuidados .row {
     margin: 0;
   }
+  #cuidados .img-cuidados {
+    margin: 0;
+  }
   #cuidados .title {
-    text-align: left;
     margin: 69px 0;
+  }
+  #cuidados img {
+    width: 100%;
+    height: 426px;
+    margin-bottom: -4px;
   }
   #cuidados .left {
     width: 51.6129032258%;
   }
   #cuidados .left .title {
-    padding: 0 12.5% 0 6.25%;
-  }
-  #cuidados .left img {
-    width: 105%;
-    height: 426px;
-    margin-left: -5%;
+    padding: 54px 12.5% 0 6.25%;
   }
   #cuidados .right {
     margin-top: 0;
@@ -1467,12 +1457,6 @@ body.active {
   #cuidados .right .title {
     padding: 0 6.6666666667% 0 13.3333333333%;
   }
-  #cuidados .right img {
-    width: 105%;
-    height: 426px;
-    margin-right: -5%;
-    margin-bottom: -3px;
-  }
 }
 
 #contacto {
@@ -1480,6 +1464,22 @@ body.active {
 }
 #contacto .row {
   margin: 0 5.4054054054%;
+}
+#contacto .left {
+  width: 100%;
+}
+#contacto .left .input-field {
+  width: 100%;
+  height: 65px;
+}
+#contacto .left .message {
+  height: 134px;
+}
+#contacto .left .message label {
+  bottom: 73%;
+}
+#contacto .left .cta {
+  width: 100%;
 }
 #contacto .right {
   width: 100%;
@@ -1495,20 +1495,24 @@ body.active {
 }
 @media only screen and (min-width: 1050px) {
   #contacto .row {
-    margin: 0 3.2258064516%;
+    margin: 0;
   }
   #contacto .title {
     text-align: left;
     margin-top: 68px;
   }
   #contacto .left {
-    width: 51.724137931%;
+    width: 48.3870967742%;
+    margin-left: 3.2258064516%;
   }
   #contacto .left .input-field {
     width: 40%;
   }
   #contacto .left .input-field:nth-child(1) {
     margin-right: 3.3333333333%;
+  }
+  #contacto .left .input-field textarea {
+    height: 140px;
   }
   #contacto .left .message {
     width: 83.3333333333%;
@@ -1522,7 +1526,22 @@ body.active {
   }
   #contacto .right {
     margin-top: 0;
-    width: 48.275862069%;
+    width: 48.3870967742%;
+  }
+  #contacto .iframe-container {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 80%;
+    /* aspect ratio */
+    position: relative;
+  }
+  #contacto .iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
 

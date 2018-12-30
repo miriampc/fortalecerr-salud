@@ -22,7 +22,7 @@ strong {
 section {
     padding: 48px 0;
     @include desktop {
-        padding: 75px 0;
+        padding: 0;
     }
 }
 
@@ -68,6 +68,7 @@ section {
         font-weight: 300;
         margin-top: 16px;
         color: $paragraph-text-color;
+        text-align: justify;
         @include desktop {
             font-size: 18px;
             margin-top: 16px;
@@ -104,7 +105,7 @@ section {
         background-color: #fafafc;
     }
     textarea {
-        height: 140px;
+        height: 116px;
         width: 100%;
         padding-top: 20px;
     }
@@ -137,7 +138,7 @@ section {
     border-radius: $border-radius-first;
     text-decoration: none;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 1px;
     cursor: pointer;
     font-family: $second-font;

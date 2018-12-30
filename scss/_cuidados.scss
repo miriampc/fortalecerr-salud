@@ -1,10 +1,23 @@
 #cuidados {
+    padding-top: 0;
     .row {
         margin: 0 col(2,37);
     }
+    .img-cuidados {
+        margin: 0 -10.5%;
+    }
+    img {
+        width: 100%;
+        height: 150px;
+    }
+    .left {
+        .title {
+            margin: 40px 0 24px;
+        }
+    }
     .right {
         width: col(33,33);
-        margin-top: 32px;
+        margin-top: 8px;
         .right-item {
             margin-left: inherit;
         }        
@@ -18,19 +31,21 @@
         .row {
             margin: 0;
         }
+        .img-cuidados {
+            margin: 0;
+        }
         .title {
-            text-align: left;
             margin: 69px 0;
+        }
+        img {
+            width: 100%;
+            height: 426px;
+            margin-bottom: -4px;
         }
         .left {
             width: col(16,31);
             .title {
-                padding: 0 col(2,16) 0 col(1,16);
-            }
-            img {
-                width: 105%;
-                height: 426px;
-                margin-left: -5%;
+                padding: 54px col(2,16) 0 col(1,16);
             }
         }
         .right {
@@ -38,12 +53,6 @@
             width: col(15,31);
             .title {
                 padding: 0 col(1,15) 0 col(2,15);
-            }
-            img {
-                width: 105%;
-                height: 426px;
-                margin-right: -5%;
-                margin-bottom: -3px;
             }
         }
     }
