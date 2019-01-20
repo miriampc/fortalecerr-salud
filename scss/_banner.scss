@@ -2,25 +2,40 @@
     background: url('../images/fortalecer-m.png') no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 60px;    
+    padding-top: 60px;
     .banner {
-        margin: 36px col(2,37) 221px;
-        text-align: center;
+        margin: 38px col(1,37) 40px;
+        &__logo {
+            img {
+                max-width: 280px;
+                width: col(16,35);                
+            }
+        }
         &__title {
-            font-size: 28px;
-            font-weight: 300;
+            font-size: 22px;
+            font-weight: 700;
             line-height: 1.2;
-            margin-bottom: 14px;
+            margin-bottom: 10px;
+            color: $first-color;
+        }
+        &__subtitle {
+            font-size: 16px;
+            font-weight: 400;
             color: $title-text-color;
+            margin-bottom: 20px;
+        }
+        .cta {
+            width: col(18,35);
         }
     }
     @include tablet {
+        background-position: inherit;
+        padding-top: 80px;
         .banner {
-            margin: 74px col(5,31) 80px;
+            margin: 74px col(4,31) 80px;
             &__title {
                 font-size: 28px;
                 line-height: 1.1;
-                margin-bottom: 21px;
             }
         }
 
@@ -29,19 +44,29 @@
         padding-top: 80px;
         background: url('../images/fortalecer-d.png') no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
         .row {
             margin: 0 col(1,31);
         }
         .banner {
-            margin: 80px 0 120px;
-            width: col(11,31);
-            text-align: left;            
+            margin: 60px 0;
+            width: col(15,31);
+            text-align: left;
+            &__logo {
+                img {
+                    max-width: 280px;
+                    width: col(7,15);                
+                }
+            }            
             &__title {
-                font-size: 40px;
+                font-size: 50px;
+            }
+            &__subtitle {
+                font-size: 24px;
+                margin-bottom: 30px;
             }
             .cta {
-                width: col(7,11);
+                width: col(5,11);
             }
         }
     }

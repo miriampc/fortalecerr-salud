@@ -1,4 +1,4 @@
-var servicios = [
+var solicServicio = [
     {   id:1,
         title:'1. Contáctanos',
         text:'Llámanos al <strong>+54 911-2713-1252</strong>, cuéntanos acerca del paciente, cuales son sus necesidades, los cuidados que requiere y sus pasatiempos.',
@@ -19,5 +19,28 @@ var servicios = [
         srcImage:'./images/domicilio.png',
         position:'',
         bgColor:'#fff'
+    }
+];
+
+var servicios = [
+    {   id:1,
+        title:'Acompañamiento Terapéutico.',        
+        srcImage:'./images/acompaniamiento-terapeutico.png'
+        // bgColor:'#fff'
+    },
+    {   id:2,
+        title:'Enfermería en internación domiciliaria o sanatorios.',        
+        srcImage:'./images/internacion-domiciliaria.png'
+        // bgColor:'#fff'
+    },
+    {   id:3,
+        title:'Kinesiología',
+        srcImage:'./images/kinesiologia.png'
+        // bgColor:'#fff'
+    },
+    {   id:4,
+        title:'Prestaciones diversas.',       
+        srcImage:'./images/prestaciones-diversas.png'
+        // bgColor:'#fff'
     }
 ]

@@ -1,0 +1,32 @@
+.pages {
+    #banner{
+        background-size: cover;
+        background-position: center;
+        .banner {
+            margin: 40px 0;
+            &__title {
+               margin: 0;
+                color: #ffffff;
+            }
+        }
+        @include desktop {
+            .banner {
+                margin: 90px 0;
+            }
+        }
+    }
+}
+.nosotros {
+    #banner{
+        background: url('../images/nosotros.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #quienesSomos{
+        @include desktop {
+            .left {
+                margin-top: 84px;
+            }
+        }
+    }
+}

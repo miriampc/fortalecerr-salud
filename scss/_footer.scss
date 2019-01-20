@@ -1,193 +1,59 @@
 footer {
     background: #252a2e;
     * {
-        font-family: $second-font;
-    }
-    padding: 0 0 30px;
-    a {
-        text-decoration: none;
-        &:hover{
-            color:$color-Hover!important;
-        }
-    }
-    li {
-        list-style: none;
+      color: #ffffff;
     }
     .row {
-        margin-left: col(1,31);
+      margin: 0 2.7027027027%;
+      padding: 30px 0;
     }
-    .title {
-        margin-bottom: 37px;
-        &__section {
-            letter-spacing: 1px;
-            font-size: 12px;
-            font-weight: normal;
+    
+    .social-media {
+      width: 100%;
+      border-top: 0.2px solid #54535d;
+      padding-top: 20px;
+      margin-top: 10px;
+      a {
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        padding: 9px 12px 6px 12px;
+        margin-left: 12px;
+        &:hover {
+          border-color: #13bfb1;
+          i {
+            color: #13bfb1;
+          }
         }
-    }
-    %link {
-        color: $paragraph-text-color;
-        font-size: 14px;
-        margin-bottom: 8px;
-        font-weight: 100;
-        letter-spacing: .2px;
-    }
-    .contact {
-        width: col(35,37);
-        margin-bottom: 40px;
-        p {
-            @extend %link;
-        }
-        &__phone {
-            margin-bottom: 27px;
-            width: col(18,37);
-            h4 {
-                font-size: 14px;
-                font-weight: 800;
-                letter-spacing: 1px;
-                color: $first-color;
-            }
-        }
-        .social-media {
-            a{
-                margin-right: 19px;
-                :last-child{
-                    margin-right: 0;
-                }
-            }
-            i {
-                font-size: 21px;
-                color:$icon-color;
-                
-                &:hover {
-                    color: $color-Hover;
-                }
-            }
-        }
-    }
-    .list {
-        ul>li {
-            margin-bottom: 24px;
-            a {
-                @extend %link;
-                &:hover{
-                    color:$color-Hover!important;
-                }
-            }
-        }
-    }
-    .app-rimac {
-        border-top: 1px solid #f0f1f5;
-        border-bottom: 1px solid #f0f1f5;
-        padding: 40px 0;
-        &__text {
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 27px;
-            color: $paragraph-text-color;
-        }
-        &__links {
-            a:nth-child(1){
-                margin-right: 30px;
-            }
-            a {
-                color: $first-color;
-                font-size: 12px;
-                font-weight: 800;
-                letter-spacing: 1px;
-            }
-            i {
-                font-size: 20px;
-                margin-right: 11px;
-            }
-        }
+      }
     }
     .copy-right {
-        padding-top: 40px;
-        &__logo {
-            margin-bottom: 25px;
-            img {
-                width: 90px;
-            }
-        }
-        &__text p{
-            font-size: 12px;
-            font-weight: 300;
-            letter-spacing: 1px;
-            color: $paragraph-text-color;
-        }
+      margin-top: 16px;
+      width: 100%;
+      p {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        font-weight: 300;
+        font-family: "Metrophobic", sans-serif;
+      }
     }
+
     @include tablet {
         .row {
-            margin-left: col(2,31);
-        }
-        .contact {
-            width: col(27,30);
-            &__phone {
-                width: col(9,27);
-            }
-        }
-        .app-rimac {
-            &__text {
-                width: col(8,30);
-                margin: 8px 0 0;
-            }
-        }
-        .copy-right {
-            &__logo {
-                width: col(8,30);
-            }
+            margin: 0 6.4516129032%;
         }
     }
-    @include desktop {
-        padding: 70px 0;
+    
+    @include desktop {    
         .row {
-            margin-left: col(1,31);
+            margin: 0 3.2258064516%;
+            padding: 44px 0;
         }
-        .contact {
-            width: col(6,30);
-            margin-bottom: 50px;
-            &__phone {
-                width: col(6,6);
-            }
-        }
-        .list {
-            width: col(24,30);
-            &__insurance {
-                width: col(6,24)
-            }
-            &__us {
-                width: col(6,24)
-            }
-            &__access {
-                width: col(6,24)
-            }
-            &__aviso {
-                width: col(6,24)
-            }            
-        }
-        .app-rimac {
-            padding: 50px 0;
-            &__text {
-                width: col(6,30);
-                font-size: 18px;
-                font-weight: 300;
-                letter-spacing: 0.2px;
-                text-transform: inherit;
-                margin: 12px 0 0;
-            }
-            &__links {
-                a {
-                    font-size: 14px;
-                }
-            }
+        p {
+            font-size: 13px;
         }
         .copy-right {
-            padding-top: 50px;
-            &__logo {
-                width: col(18,30);
-                margin-bottom: 0;
-            }
-        }
+            margin-top: 9px;
+        }        
     }
 }

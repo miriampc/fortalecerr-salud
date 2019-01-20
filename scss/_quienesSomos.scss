@@ -1,13 +1,14 @@
 #quienesSomos {
+    padding-bottom: 0;
     .row {
         margin: 0 col(2,37);
     }
     .right {
         width: col(33,33);
-        margin-top: 32px;
-        .right-item {
-            margin-left: inherit;
-        }        
+        text-align: center;
+        img {
+            width: 200px;
+        }      
     }
     @include tablet {
         .row {
@@ -29,9 +30,11 @@
             margin-top: 0;
             margin-left: col(4,29);
             width: col(12,29);
+            overflow: hidden;
             img {
                 width: 100%;
-                margin-bottom: -4px;
+                height: 478px;;
+                margin: -54px 0 -4px;
             }
         }
     }

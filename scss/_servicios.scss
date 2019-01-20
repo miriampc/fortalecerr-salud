@@ -1,16 +1,14 @@
 #servicios {
-    background: #0eb6a8;
+    background: #f5fffe;
+    // f9fffe
     .row {
         margin: 0 col(2,37);
     }
     .owl-carousel .owl-item img {
         display: inline-block;
     }
-    .owl-carousel .owl-stage-outer {
-        padding-top: 50px;
-    }
     .title {
-        * {color: #ffffff;}
+        // * {color: #ffffff;}
         &__subtext {
             text-align: center;
         }
@@ -18,8 +16,7 @@
     .servicios {
         margin-top: 32px;
         .item {
-            position: relative;
-            padding: 20px 14px;
+            // padding: 20px 14px;
             width: 100%;
             min-height: 270px;
             border-radius: 12px;
@@ -38,17 +35,11 @@
             }
 
             &__img {
-                position: absolute;
-                left: 32%;
-                top: -50px;
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                background: #68d0c8;
+                // width: 100px;
+                overflow: hidden;
                 img{
-                    width: 50px;
-                    position: relative;
-                    top: 19%;
+                    // width: 50px;
+                    height: 200px;                    
                 }
             }
         }
@@ -72,10 +63,9 @@
             margin: 0 col(5,27);
         }
         .servicios {
-            margin-top: 56px;
+            margin-top: 38px;
             .item {
-                padding: 30px;
-                // width: col(9,29);
+                // padding: 30px;
                 max-width: 100%;
                 &__title {
                     font-size: 20px;
@@ -84,7 +74,7 @@
                     font-size: 16px;
                 }
                 &__img {
-                    left: 37%;
+                    
                 }
             }
         }

@@ -6,10 +6,12 @@ $(document).ready(function () {
     });
     //Ejecuta funciones con data dinamica
     Servicios();
+    SolicitarServicio();
 
     //match media for carousels
-    addCarousel('servicios-carousel',1,2);
-    function addCarousel(element, mobItems, tabletItems) {
+    addCarousel('servicios-carousel',1,2,4);
+    addCarousel('solicitarServicio-carousel',1,2,3);
+    function addCarousel(element, mobItems, tabletItems, deskItems) {
         $("#"+element).owlCarousel({
             loop: true,
             margin: 16,
@@ -23,7 +25,7 @@ $(document).ready(function () {
                     margin: 24
                 },
                 1050: {
-                    items: 3,
+                    items: deskItems,
                     margin: 20,
                     mouseDrag: false
                 }
