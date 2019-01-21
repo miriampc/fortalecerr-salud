@@ -4,38 +4,32 @@ footer {
       color: #ffffff;
     }
     .row {
-      margin: 0 2.7027027027%;
+      margin: 0 col(1,37);
       padding: 30px 0;
     }
-    
+    p {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        font-weight: 300;
+        font-family: "Metrophobic", sans-serif;
+    }
     .social-media {
       width: 100%;
-      border-top: 0.2px solid #54535d;
-      padding-top: 20px;
-      margin-top: 10px;
       a {
         text-decoration: none;
-        border: 1px solid #ffffff;
-        border-radius: 50%;
-        padding: 9px 12px 6px 12px;
-        margin-left: 12px;
+        margin-left: 8px;
+        i {
+            font-size: 21px;
+        }
         &:hover {
-          border-color: #13bfb1;
           i {
-            color: #13bfb1;
+            color: #7ceae1;
           }
         }
       }
     }
     .copy-right {
-      margin-top: 16px;
       width: 100%;
-      p {
-        font-size: 12px;
-        letter-spacing: 0.3px;
-        font-weight: 300;
-        font-family: "Metrophobic", sans-serif;
-      }
     }
 
     @include tablet {
@@ -52,8 +46,16 @@ footer {
         p {
             font-size: 13px;
         }
+        .social-media {
+            width: 50%;
+            p {
+                float: right;
+            }
+        }
         .copy-right {
-            margin-top: 9px;
+            width: 50%;
+            margin-top: 20px;
+            text-align: left;
         }        
     }
 }

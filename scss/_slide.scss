@@ -4,9 +4,10 @@
         top: 23px;
     }
     .owl-theme .owl-dots .owl-dot span {
-        width: 8px;
-        height: 8px;
-        background: #68d0c8;
+        width: 10px;
+        height: 10px;
+        background: transparent;
+        border: 1px solid #ffffff;
     }
     
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {

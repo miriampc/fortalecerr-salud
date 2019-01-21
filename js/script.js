@@ -4,12 +4,22 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -70}, 800, 'linear');
     });
+    $('#btnContacto').on('click',function(e){
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -70}, 800, 'linear');
+    })
+    $('.menu__dropdown--item a').on('click',function(e){
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -60}, 800, 'linear');
+    })
     //Ejecuta funciones con data dinamica
     Servicios();
     SolicitarServicio();
+    ServiciosCompleto();
 
     //match media for carousels
     addCarousel('servicios-carousel',1,2,4);
+    addCarousel('services-carousel',1,2,4);
     addCarousel('solicitarServicio-carousel',1,2,3);
     function addCarousel(element, mobItems, tabletItems, deskItems) {
         $("#"+element).owlCarousel({

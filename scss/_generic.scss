@@ -37,6 +37,12 @@ section {
 .font-thin {
     font-weight: 300;
 }
+.w100 {
+    width: 100%;
+}
+.w50 {
+    width: 50%;
+}
 .link {
     margin-top: 20px;
     &__text {
@@ -48,8 +54,10 @@ section {
         }
     }
     i {
-        margin-left: 6px;
-        font-size: 10px;
+        margin-left: 2px;
+        font-size: 17px;
+        position: relative;
+        top: 3px;
     }
 }
 

@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./css/style.css"/>
         <link rel="shortcut icon" href="./images/favicon.ico"/>       
     </head>
-    <body class="pages nosotros">
+    <body class="pages services">
         <header id="header">
             <div id="menuMobile" class="menu__mobile">
                 <div class="menu__dropdown">
@@ -35,14 +35,14 @@
                     </div>
                     <div class="menu__dropdown--item">
                         <div class="container">
-                            <a href="#banner" class="menu__dropdown--header">NOSOTROS
+                            <a href="https://fortalecer-salud.github.io/nosotros.html" class="menu__dropdown--header">NOSOTROS
                                 <i class="icon-heart"></i>
                             </a>
                         </div>
                     </div>
                     <div class="menu__dropdown--item">
                         <div class="container">
-                            <a href="https://fortalecer-salud.github.io/servicios.html" class="menu__dropdown--header">SERVICIOS
+                            <a href="#banner" class="menu__dropdown--header">SERVICIOS
                                 <i class="icon-salud"></i>
                             </a>
                         </div>
@@ -72,9 +72,8 @@
                         </div>
                         <div class="col header__right">
                             <a href="https://fortalecer-salud.github.io.html" class="header__link hide-tablet-on-down">INICIO</a>
-                            <a href="#banner" class="header__link hide-tablet-on-down">NOSOTROS</a>
-                            <a href="https://fortalecer-salud.github.io/servicios.html" class="header__link hide-tablet-on-down">SERVICIOS</a>
-                            <!-- <a href="#cuidados" class="header__link hide-tablet-on-down">CUIDADOS</a> -->
+                            <a href="https://fortalecer-salud.github.io/nosotros.html" class="header__link hide-tablet-on-down">NOSOTROS</a>
+                            <a href="#banner" class="header__link hide-tablet-on-down">SERVICIOS</a>
                             <a href="#contacto" class="header__link hide-tablet-on-down">CONTACTO</a>
                         </div>
                     </div>
@@ -85,42 +84,32 @@
             <div class="container">
                 <div class="row">
                     <div class="col banner">
-                        <h2 class="banner__title">NOSOTROS</h2>
+                        <h2 class="banner__title">SERVICIOS</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <section id="quienesSomos">
+        <section id="servicios">
             <div class="container">
                 <div class="row">
-                    <div class="col left">
-                        <div class="title center">
-                            <h3 class="title__principal">¿Quiénes somos?</h3>
-                            <p class="title__subtext">Somos un equipo de profesionales de la salud que contamos con amplia experiencia en el campo de Internación domiciliaria y acompañamiento terapéutico, lo cual nos garantiza para ofrecer nuestros servicios.</p>
-                            <p class="title__subtext">Entendemos que el acompañamiento en la internación domiciliaria es una herramienta que permite al profesional tratante introducir estrategias, y de ese modo conseguir la recuperación paulatina y planificada del paciente.</p>
-                        </div>
+                    <div class="title center">
+                        <h3 class="title__principal">Tenemos los servicios que necesita</h3>
                     </div>
-                    <div class="col right hide-tablet-on-down">
-                        <img src="./images/medico.png" alt="Somos FortalecerrSalud">
+                    <div class="servicios">
+                        <div id="services-carousel" class="owl-carousel owl-theme"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="cuidados">
-            <div class="col img-cuidados hide-desktop">
-                <img src="./images/cuidados-m.png" alt="Cuidados en FortalecerrSalud">
-            </div>
+        <section id="solicitar-servicio">
             <div class="container">
                 <div class="row">
-                    <div class="col left img-cuidados hide-tablet-on-down">
-                        <img src="./images/cuidados.png" alt="Cuidados en FortalecerrSalud">
+                    <div class="title center">
+                        <h3 class="title__principal">¿Cómo solicitar nuestro servicio?</h3>
+                        <p class="title__subtext">Su acompañante terapéutico en 3 simples pasos.</p>
                     </div>
-                    <div class="col right">
-                        <div class="title">
-                            <h3 class="title__principal">Cuidamos tu salud</h3>
-                            <p class="title__subtext">Durante toda su internación usted contará con un Acompañante Terapéutico/Enfermería brindando apoyo al paciente, como al familiar. Los cuidados post internación hospitalaria contarán con la presencia de nuestro personal en su domicilio, se hará de forma inmediata tras su alta del sanatorio.</p>
-                            <p class="title__subtext">Contamos con personal altamente capacitado y con experiencia en los cuidados.</p>
-                        </div>
+                    <div class="servicios">
+                        <div id="solicitarServicio-carousel" class="owl-carousel owl-theme"></div>
                     </div>
                 </div>
             </div>
@@ -151,9 +140,6 @@
                             <i class="icon-email"></i>
                             <p>infofortalecer@gmail.com</p>
                         </div>
-                        <!-- <div class="col item social-media center">
-                            <p>Siguenos en: <a href="https://m.facebook.com/fortalecerrsalud.salud"><i class="icon-facebook"></i></a></p>
-                        </div> -->
                     </div>
                     <!-- <div class="col right hide-tablet-on-down">
                         <div class="iframe-container">
@@ -175,7 +161,10 @@
                 </div>
             </div>
         </footer>
-        <script src="./js/jquery-3.2.1.min.js"></script> 
-        <script src="./js/script.js"></script>     
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+        <script src="./js/data.js"></script>
+        <script src="./js/functions.js"></script>
+        <script src="./js/script.js"></script>      
     </body>
 </html>

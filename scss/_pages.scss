@@ -23,9 +23,27 @@
         background-position: center;
     }
     #quienesSomos{
+        padding: 48px 0;
         @include desktop {
+            padding: 0;
             .left {
                 margin-top: 84px;
+            }
+        }
+    }
+}
+.services {
+    #banner{
+        background: url('../images/servicios.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #servicios {
+        .servicios {
+            .item {
+                &__body {
+                    min-height: 225px;
+                }
             }
         }
     }

@@ -24,23 +24,23 @@ var solicServicio = [
 
 var servicios = [
     {   id:1,
-        title:'Acompañamiento Terapéutico.',        
+        title:'Acompañamiento Terapéutico.',
+        text: 'En el acompañamiento terapéutico,cuyo roles son múltiples,  y pueden abarcar desde ayudar al paciente a desempeñar funciones básicas en caso del acompañante.',
         srcImage:'./images/acompaniamiento-terapeutico.png'
-        // bgColor:'#fff'
     },
     {   id:2,
-        title:'Enfermería en internación domiciliaria o sanatorios.',        
+        title:'Enfermería en internación domiciliaria o sanatorios.',
+        text: 'Realizar diversos procedimientos propios de la profesión que van desde comodidad y confort hasta diversos procedimientos según las necesidades del paciente y según indicaciones médicas.',
         srcImage:'./images/internacion-domiciliaria.png'
-        // bgColor:'#fff'
     },
     {   id:3,
         title:'Kinesiología',
+        text:'Trabajamos en el control de los sistemas de asistencia respiratoria mecánica, ventilación no invasiva, control y monitorización. En la movilización precoz y en la primera fase de la recuperación de las funciones motrices generales y deglutorias comprometidas.',
         srcImage:'./images/kinesiologia.png'
-        // bgColor:'#fff'
     },
     {   id:4,
-        title:'Prestaciones diversas.',       
-        srcImage:'./images/prestaciones-diversas.png'
-        // bgColor:'#fff'
+        title:'Prestaciones diversas.',
+        text: 'Las presentaciones diversos es un trabajo que desempeña el acompañante terapéutico, el cual actúa como auxiliar de salud, colaborando con los pacientes que se hallan en internación en el sanatorio o domicilio, y así contribuir al tratamiento médico.',
+        srcImage:'./images/prestaciones-diversas.jpg'
     }
 ]
